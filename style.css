@@ -1,0 +1,44 @@
+
+.HEADER{
+    display:flex;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+.picture{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    
+}
+.picture img{
+    border: 2px solid black;
+    border-radius: 40px;
+}
+body{
+    background:linear-gradient(to bottom,#1f634eb6,#e3cbc3);
+    background-size: 100% 100%;
+    animation: gradient 2s infinite ease-in-out;
+}@keyframes gradient {    0%
+    {background-position:0% 50%
+
+    }
+    50%{
+      background-position:50% 50%
+    }
+    100%{
+      background-position:0% 50%
+    }}
+     img:hover{
+         transform: scale(1.2);
+         opacity: 0;
+     }
+     .bodyImage p{
+         color: bisque;font-size: 55px;
+         position:absolute ;
+         top :50%;
+         left:30%;
+         translate: transform(-50%,-30%);
+     }
